@@ -51,7 +51,7 @@ impl Matrix {
         let dim_y = data.len();
         let dim_x = data[0].len();
 
-        Ok(Matrix { dim_x, dim_y, data })
+        Ok(Matrix::new(dim_x, dim_y, Some(data)))
     }
 
     // Function to zoom or shrink the matrix
